@@ -250,3 +250,111 @@ nav a:hover{
     box-shadow:0 20px 50px rgba(0,0,0,.2);
 
 }
+
+
+/* ===========================
+   SECTIONS
+=========================== */
+
+section{
+    padding:90px 8%;
+}
+
+.section-title{
+    font-family:'Playfair Display',serif;
+    font-size:42px;
+    color:#0F172A;
+    margin-bottom:35px;
+    position:relative;
+}
+
+.section-title::after{
+    content:"";
+    width:90px;
+    height:4px;
+    background:#D4AF37;
+    display:block;
+    margin-top:10px;
+    border-radius:10px;
+}
+
+.timeline{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+    gap:25px;
+}
+
+.card,
+.project,
+.skill{
+    background:#fff;
+    padding:28px;
+    border-radius:20px;
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+    transition:.35s ease;
+}
+
+.card:hover,
+.project:hover,
+.skill:hover{
+    transform:translateY(-8px);
+    box-shadow:0 20px 40px rgba(0,0,0,.15);
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+}
+
+footer{
+    background:#0F172A;
+    color:white;
+    text-align:center;
+    padding:30px;
+    margin-top:80px;
+}
+
+/* ===========================
+   MOBILE
+=========================== */
+
+@media(max-width:900px){
+
+nav{
+    padding:18px 6%;
+}
+
+nav ul{
+    display:none;
+}
+
+.hero{
+    flex-direction:column;
+    text-align:center;
+    padding-top:140px;
+}
+
+.hero h1{
+    font-size:48px;
+}
+
+.hero h2{
+    font-size:20px;
+}
+
+.buttons{
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+.photo{
+    width:280px;
+    height:330px;
+}
+
+.section-title{
+    font-size:34px;
+}
+
+}
